@@ -1,4 +1,6 @@
 set autoread
+set number
+set tabstop=4 sts=4
 augroup checktime
     au!
     if !has("gui_running")
