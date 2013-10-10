@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/root/goproj/src/github.com/shxsun/pm25/.git'
+let g:netrw_dirhist_2='/root/goproj/src/github.com/shxsun/klog/.git'
+let g:netrw_dirhist_3='/root/.vim'

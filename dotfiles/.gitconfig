@@ -1,3 +1,7 @@
 [user]
 	name = skyblue
 	email = ssx205@gmail.com
+[merge]
+	tool = vimdiff
+[color]
+	ui = auto
