@@ -7,7 +7,13 @@ alias cdgh='cd $GOPATH/src/github.com/'
 alias commit='git commit'
 alias push='git push'
 alias pull='git pull'
+alias add='git add'
 alias st='git status -s'
+alias ll='ls -lF'
+
+gcd(){ 
+	cd $GOPATH/src/$(golocate ${1:-"."})
+}
 
 get_dir() {
     printf "%s" $(pwd | sed "s:$HOME:~:")
