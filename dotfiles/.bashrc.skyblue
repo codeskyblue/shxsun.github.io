@@ -1,5 +1,6 @@
 export GOPATH=$HOME/goproj
-export PATH=$PATH:$GOPATH/bin
+TOOLDIR=$GOPATH/src/github.com/shxsun/shxsun.github.io/tools
+export PATH=$PATH:$GOPATH/bin:$TOOLDIR
 
 alias cdme='cd $GOPATH/src/github.com/shxsun'
 alias cdgh='cd $GOPATH/src/github.com/'
