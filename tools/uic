@@ -1,0 +1,15 @@
+#!/bin/env php
+<?php
+isset($argv[1]) or die("uic id|name");
+$arg = $argv[1];
+$methods = array(
+    0 => 'getNoahUserByName',
+    1 => 'getNoahUserById',
+);
+$wsdl = 'http://tc-noah-db2.tc.baidu.com/noah/index.php?r=userPermitService/ws';
+$method = $methods[is_numeric($arg)];
+$tree = new SoapClient($wsdl);
+$user = $tree->$method($arg);
+empty($user) or $user['show'] = 'http://family.baidu.com:8083/images/userimages/' . $user['username'] . '.jpg';
+print_r($user);
+
