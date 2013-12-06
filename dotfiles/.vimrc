@@ -46,3 +46,9 @@ function! HasPaste()
 	en
 	return ''
 endfunction
+
+autocmd BufRead,BufNewFile *.py call PythonSet()
+" python setting
+function PythonSet()
+	set expandtab
+endfunction
