@@ -1,0 +1,10 @@
+#!/bin/bash 
+#
+if test -f "$1"
+then
+	go run "$1"
+	exit $?
+fi
+
+go build && ./$(basename "$(pwd)")
+
